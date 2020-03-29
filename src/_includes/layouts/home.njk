@@ -2,14 +2,8 @@
 
 {% set pageType = 'Homepage' %}
 
-<style>
-.home-flex {
-  height: 100vh;
-}
-</style>
-
 {% block content %}
-  <main class="home-flex box-flex align-end width-full pad-top-900 pad-right-900 pad-bottom-900 pad-left-900" id="main-content" tabindex="-1">
+  <main class="box-flex align-end width-full pad-top-900 pad-right-900 pad-bottom-900 pad-left-900" style="background-image: url('/images/placeholder.jpg');height: 100vh;background-repeat: no-repeat;background-size: cover;" id="main-content" tabindex="-1">
     <div class="box-flex width-full align-end space-between">
       {% include "partials/components/nav.njk" %}
 
