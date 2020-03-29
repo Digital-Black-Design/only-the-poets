@@ -5,14 +5,22 @@
 {% set introHeading = title %}
 
 {% block content %}
+  {% include "partials/global/site-head.njk" %}
+
   <main id="main-content" tabindex="-1">
     <article class="[ post ] [ h-entry ]">
       {% include "partials/components/intro.njk" %}
+
       <div class="[ post__body ] [ inner-wrapper ] [ leading-loose pad-top-900 pad-bottom-900 text-500 ] [ sf-flow ] [ e-content ]">
         {{ content | safe }}
       </div>
     </article>
   </main>
+
+  {% include "partials/global/site-foot.njk" %}
+
+  {% block foot %}
+  {% endblock %}
 {% endblock %}
 
 {{ content | safe }}
