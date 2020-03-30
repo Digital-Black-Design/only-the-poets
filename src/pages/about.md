@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
 title: About
-permalink: '{{slug}}'
+permalink: '/{{title | slug}}/'
 ---
 Test

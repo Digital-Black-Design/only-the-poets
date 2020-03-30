@@ -32,7 +32,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Permalink", name: "permalink", widget: "hidden", default: "{{slug}}"}
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "/{{title | slug}}/"}
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
       - {label: "Social Image", name: "socialImage", widget: "image", required: false}
