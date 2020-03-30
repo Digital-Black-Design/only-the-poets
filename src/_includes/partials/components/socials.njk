@@ -1,0 +1,9 @@
+{% if socials.items %}
+  <nav class="box-flex" aria-label="{{ariaLabel}}">
+    {% for item in socials.items %}
+      <a class="icon color-light pad-right-300" href="{{ item.url }}" rel="noopener" target="_blank">
+        {% include "icons/socials/" + item.text.toLowerCase() + ".svg" %}
+      </a>
+    {% endfor %}
+  </nav>
+{% endif %}
