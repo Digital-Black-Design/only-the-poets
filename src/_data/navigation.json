@@ -12,12 +12,12 @@
     },
     {
       "text": "Tickets",
-      "url": "https://twitter.com/hankchizljaw",
-      "external": true
+      "url": "/",
+      "external": false
     },
     {
       "text": "About",
-      "url": "/about",
+      "url": "/",
       "external": false
     }
   ]

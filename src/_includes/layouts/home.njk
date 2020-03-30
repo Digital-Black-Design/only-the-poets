@@ -2,12 +2,34 @@
 
 {% set pageType = 'Homepage' %}
 
+{% block head %}
+  <style>
+    .home {
+      background-image: url('/images/placeholder.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .home::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+  </style>
+{% endblock %}
+
 {% block content %}
-  <main class="box-flex align-end width-full pad-top-900 pad-right-900 pad-bottom-900 pad-left-900" style="background-image: url('/images/placeholder.jpg');height: 100vh;background-repeat: no-repeat;background-size: cover;" id="main-content" tabindex="-1">
-    <div class="box-flex width-full align-end space-between">
+  <main class="home box-flex width-full height-screen pos-r" id="main-content" tabindex="-1">
+    <div class="box-flex width-full height-full align-end space-between pad-top-900 pad-right-900 pad-bottom-900 pad-left-900 text-600 pos-r">
       {% include "partials/components/nav.njk" %}
 
-      <img width="300" src="/images/logo.jpg" alt="">
+      <div class="pad-bottom-300">
+        <img width="300" src="/images/logo.jpg" alt="">
+      </div>
     </div>
   </main>
 {% endblock %}
