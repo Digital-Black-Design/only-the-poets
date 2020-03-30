@@ -1,8 +1,11 @@
-<footer role="contentinfo" class="[ site-foot ] [ pad-top-700 pad-bottom-700 ]">
+<footer role="contentinfo" class="[ site-foot ] [ pad-top-700 pad-bottom-700 gap-top-900 ]">
   <div class="wrapper">
     <div class="[ site-foot__inner ] [ md:box-flex space-between align-center ]">
-      {% set ariaLabel = 'footer navigation' %}
-      {% include "partials/components/nav.njk" %}
+      <div>
+        {% set ariaLabel = 'footer navigation' %}
+        {% include "partials/components/nav.njk" %}
+        {% include "partials/components/socials.njk" %}
+      </div>
 
       <a href="/">
         <img width="75" src="/images/logo_light.png" alt="">
