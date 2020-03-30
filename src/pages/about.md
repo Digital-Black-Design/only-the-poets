@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 title: About
 permalink: '/{{title | slug}}/'
-intro: "Stare at ceiling light. Hate dog cat fur is the new black flop over. Lick master's hand at first then bite because im moody brown cats with pink ears scratch the box or jump on human and sleep on her all night long be long in the bed."
+intro: "Stare at ceiling light. Hate dog cat fur is the new black flop over. Lick master's hand at first then bite because im moody."
 ---
 Purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans, and kitten is playing with dead mouse check cat door for ambush 10 times before coming in hiss at vacuum cleaner.
 

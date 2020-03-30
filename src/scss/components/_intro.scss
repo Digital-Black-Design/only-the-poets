@@ -9,7 +9,7 @@
 
   &__summary {
     --flow-space: #{get-size(500)};
-    font-size: get-size(500);
+    font-size: get-size(700);
 
     a {
       color: currentColor;
@@ -33,5 +33,5 @@
 .intro-pull {
   margin-top: -8rem;
   min-height: 8rem;
-  max-width: 600px;
+  max-width: 675px;
 }
